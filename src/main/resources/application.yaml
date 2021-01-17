@@ -1,0 +1,9 @@
+server.port: 8080
+spring:
+  jackson:
+    default-property-inclusion: non_null
+    property-naming-strategy: SNAKE_CASE
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    bootstrap-servers: localhost:9092
